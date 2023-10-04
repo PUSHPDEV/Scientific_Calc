@@ -1,0 +1,521 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@300;400;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+
+    /* min-height: 100px; */
+    overflow: hidden;
+    /* overflow-y: hidden; */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 93px; */
+    height: 600px;
+    padding: 20px;
+    user-select: none;
+    background: #ecf0f3;
+    /* border: 5px solid red;
+    background-color: rgb(98, 255, 0); */
+
+}
+
+.calculator {
+    width: 600px;
+    height: 450px;
+    margin-left: 1.8em;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 13px 13px 20px #cbced1,
+        -13px -13px 20px #ffffff;
+    /* border: 5px solid red;
+    background-color: aqua; */
+}
+
+/*================= Heading Css =================*/
+h2 {
+    font-size: 30px;
+    /* margin-left: 1.2em; */
+    text-align: center;
+    font-family: sans-serif;
+    color: rgb(249, 9, 169);
+    /* color: #fff; */
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px #d1d9e6,
+        1px 1px 2px #d1d9e6,
+        3px 3px 3px #d1d9e6,
+        4px 4px 4px #d1d9e6,
+        5px 5px 5px #d1d9e6,
+        6px 6px 6px #d1d9e6,
+        7px 7px 7px #d1d9e6,
+        8px 8px 8px #d1d9e6;
+    letter-spacing: 6px;
+}
+
+h2 span {
+    color: #06adfa;
+    /* color: #33cc33; */
+    font-size: 30px;
+    text-shadow: 1px 1px 1px #d1d9e6,
+        1px 1px 2px #d1d9e6,
+        3px 3px 3px #d1d9e6,
+        4px 4px 4px #d1d9e6,
+        5px 5px 5px #d1d9e6,
+        6px 6px 6px #d1d9e6;
+}
+
+h2 .fa {
+    position: absolute;
+    top: 1.5em;
+    color: #33ccff;
+}
+
+.display{
+    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+.display #screen {
+    width: 500px;
+    height: 50px;
+    font-size: 35px;
+    outline: none;
+    border: none;
+    text-align: right;
+    padding-right: .5em;
+    background: #ecf0f3;
+    border-radius: 6px;
+    box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #ffffff;
+
+   
+    caret-color: rgb(0, 255, 21);
+}
+
+.btns{
+    /* border: 5px solid red; */
+    text-align: center;
+    padding: 10px;
+}
+
+.row button {
+    width: 70px;
+    height: 50px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    margin: 5px;
+    border-radius: 4px;
+    transition: .1s;
+    box-shadow: 5px 5px 8px #00000020,
+        -5px -5px 8px #ffff;
+}
+
+.row button:hover {
+    box-shadow: inset 5px 5px 8px rgba(16, 16, 16, .1),
+        inset -5px -5px 8px #fff;
+    background: #fff;
+    /* box-shadow: inset 5px 5px 8px rgba(16, 16, 16, .1),
+        inset -5px -5px 8px #03ebf3;
+    background: #15b9d6; */
+}
+
+#equal {
+    background: #33ccff;
+    color: #fff;
+    box-shadow: inset 5px 5px 8px #66d9ff,
+        inset -5px -5px 8px #00ace6;
+}
+
+#equal:hover {
+    box-shadow: inset 5px 5px 8px #00ace6,
+        inset -5px -5px 8px #00ace6;
+}
+
+#ac {
+    background: #33cc33;
+    color: #fff;
+}
+
+#ac:hover {
+    box-shadow: inset 5px 5px 8px #2eb82e,
+        inset -5px -5px 8px #33cc33;
+}
+
+#ce {
+    background: #ff3399;
+    color: #fff;
+}
+
+#ce:hover {
+    box-shadow: inset 5px 5px 8px #e60073,
+        inset -5px -5px 8px #ff3399;
+}
+
+
+
+
+
+
+/* BREAKPOINTS */
+
+
+/* For Laptop */
+@media(max-width:1024px) {
+   
+
+    .container {
+        /* width: ; */
+        height: 456px;
+
+    }
+
+    .calculator {
+        height: 400px;
+        width: 804px;
+        /* text-align: center;  */
+    }
+h2{
+    font-size:29px;
+    
+}
+    .display{
+
+        /* width: 700px; */
+        height: 45px;
+        font-size: 20px;
+        /* margin-left:100px; */
+        text-align: center;
+
+    }
+.display #screen{
+    width:500px;
+}
+   
+    .row button {
+
+        width: 60px;
+        height: 33px;
+        font-size: 17px;
+        margin-left: 16px;
+        margin-bottom:16px;
+        margin:10px;
+        text-align:center;
+    }
+
+   
+
+}
+
+@media(max-width:852px){
+.display{
+    margin-left: 80px;
+}
+}
+
+/* For tablet */
+
+
+
+
+
+
+/* For tablet */
+@media(max-width:785px) {
+
+
+
+    .container {
+        /* width: 100; */
+        height: 475px;
+
+    }
+
+    .calculator {
+
+        width: 800px;
+        height: 400px;
+     margin-right:20px;
+        text-align: center;
+    }
+
+  
+h2{
+    font-size:30px;
+    
+}
+    .display{
+
+      
+        font-size: 20px;
+        margin-left:20px;
+
+    }
+.display #screen{
+    width: 500px;
+    height: 50px;
+}
+    .btns{
+        height:255px;
+        
+    }
+    /* .row button { */
+
+        /* width: 60px; */
+        /* height: 33px; */
+        /* font-size: 17px; */
+     
+    /* } */
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* For tablet */
+@media(max-width:675px) {
+
+
+
+
+    /* .calculator {
+
+        width: 800px;
+        height: 400px;
+     margin-right:20px;
+        text-align: center;
+    } */
+
+  
+/* h2{
+    font-size:30px;
+    
+} */
+    .display{
+
+      
+        font-size: 20px;
+        margin-left:10px;
+
+    }
+.display #screen{
+    width: 400px;
+    height: 50px;
+    /* padding-right: 20px; */
+}
+    .btns{
+        height:255px;
+        
+    }
+    .row button {
+
+        width: 45px;
+        /* height: 33px; */
+        /* font-size: 17px; */
+     
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+/* For tablet */
+@media(max-width:585px) {
+
+
+.container{
+    height: 457px;
+}
+
+    .calculator {
+
+        width: 800px;
+        height: 400px;
+     margin-right:20px;
+        text-align: center;
+    }
+
+  h2{
+    font-size: 20px;
+  }
+
+    .display{
+
+      
+        font-size: 20px;
+        margin-left:10px;
+        margin-bottom:10px;
+
+    }
+.display #screen{
+    width: 350px;
+    height: 40px;
+    /* padding-right: 20px; */
+}
+    .btns{
+        height:255px;
+        
+    }
+    .row button {
+
+        width: 37px;
+        /* height: 33px; */
+        /* font-size: 17px; */
+     
+    }
+
+}
+
+
+@media(max-width:537px){
+    .display #screen{
+        width: 300px;
+        height: 40px;
+        /* padding-right: 20px; */
+    }
+    .row button {
+
+        width: 30px;
+        height: 30px;
+        font-size: 15px;
+     
+    }
+}
+@media(max-width:495px){
+
+.calculator{
+    width: 420px;
+    height: 370px;
+
+    margin: 4px;
+}
+.display, .bnts{
+    margin-bottom: 2px;
+
+}
+    .display #screen{
+        width: 290px;
+        height: 35px;
+        padding-right: 10px;
+        font-size: 20px;
+    }
+    .row button {
+
+        width: 25px;
+        height: 30px;
+        font-size: 10px;
+        /* padding: 6px; */
+        /* margin: 10px; */
+
+     
+    }
+}
+@media(max-width:425px){
+
+.calculator{
+    /* width: 420px; */
+    height:410px;
+
+    margin: 4px;
+}
+.display{
+    margin-top: 62px;
+
+}
+h2{
+    font-size: 15px;
+}
+    .display #screen{
+        width: 250px;
+        height: 30px;
+        padding-right: 10px;
+        font-size: 17px;
+    } 
+    .row button {
+
+        width: 20px;
+        height: 27px;
+        font-size: 10px;
+        /* padding: 6px; */
+        margin-bottom: 10px;
+
+     
+    }
+}
+@media(max-width:395px){
+
+    /* .container{
+        margin: 0;
+        padding: 3px;
+    } */
+.calculator{
+    width: 300px;
+    height:410px;
+
+    margin: 0;
+}
+.display{
+    margin-top:40px;
+
+}
+h2{
+    font-size: 15px;
+}
+    .display #screen{
+        width: 230px;
+        height: 38px;
+        padding-right: 10px;
+        font-size:16px;
+    } 
+    .bnts{
+        margin: 1px;
+        padding: 1px;
+    }
+    .row button {
+/* border-radius: 50%; */
+        width: 15px;
+        height: 25px;
+        font-size: 10px;
+      /* margin: 10px; */
+       /*  margin-top: 10px; */
+
+     
+    }
+}
+@media(max-width:356px){
+.calculator{
+    width: 240px;
+    margin: 1px;
+}
+.row button {
+/* border-radius: 50%; */
+    /* width: px; */
+    height: 25px;
+    font-size: 10px;
+  /* margin: 10px; */
+   /*  margin-top: 10px; */
+
+ 
+}
+
+h2{
+    font-size: 10px;
+}
+}

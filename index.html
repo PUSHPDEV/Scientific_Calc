@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calc.css">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+
+    <link rel="icon" href="Icon_calc.jpg">
+</head>
+
+<body>
+
+    <div class="container">
+
+
+
+        <!-- ************************************************************************************************************** -->
+        <div class="calculator">
+            <h2> <span>S</span>CIENTIFIC <span>C</span>ALCI
+                <!-- <i style="font-size: 100px;" class="fa fa-reply"></i> -->
+            </h2>
+            <div class="display">
+                <input id="screen" type="text" placeholder="0">
+            </div>
+
+            <div class="btns">
+                <div class="row">
+                    <button onclick="factorial()">x!</button>
+                    <button class="btn">(</button>
+                    <button class="btn">)</button>
+                    <button class="btn">%</button>
+                    <button id="ac" onclick="screen.value=''">AC</button>
+                    <button id="ce" onclick="backspace()">CE</button>
+                </div>
+
+                <div class="row">
+                    <button onclick="sin()">sin</button>
+                    <button onclick="pi()">π</button>
+                    <button class="btn">7</button>
+                    <button class="btn">8</button>
+                    <button class="btn">9</button>
+                    <button class="btn">÷</button>
+                </div>
+
+                <div class="row">
+                    <button onclick="cos()">cos</button>
+                    <button onclick="log()">log</button>
+                    <button class="btn">4</button>
+                    <button class="btn">5</button>
+                    <button class="btn">6</button>
+                    <button class="btn">×</button>
+                </div>
+
+                <div class="row">
+                    <button onclick="tan()">tan</button>
+                    <button onclick="square()">√</button>
+                    <button class="btn">1</button>
+                    <button class="btn">2</button>
+                    <button class="btn">3</button>
+                    <button class="btn">-</button>
+                </div>
+
+                <div class="row">
+                    <button onclick="e()">e</button>
+                    <button onclick="pow()">x <span style="position: relative; bottom: .4em; right: .1em;">2</span>
+                    </button>
+                    <button class="btn">0</button>
+                    <button class="btn">.</button>
+                    <button id="equal" onclick="calculate()">=</button>
+                    <button class="btn">+</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="calc.js"></script>
+
+</html>
