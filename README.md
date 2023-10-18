@@ -1,2 +1,2 @@
 # Scientific_Calc
-The mini scientific calculator is a web-based tool created using HTML, CSS and JavaScript.
+The mini scientific calculator is a web-based tool created using HTML, CSS, and JavaScript. It provides basic scientific functions for performing mathematical calculations. Users can input mathematical expressions and perform operations such as addition, subtraction, multiplication, division, as well as more advanced functions like square root, trigonometric calculations, and logarithms.
